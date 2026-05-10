@@ -110,9 +110,10 @@ main h1 {
 
 .text {
     padding: 0;
-    padding-top: 50px;
+    padding-top: 60px;
     margin-left: 40px;
     margin-right: 40px;
+    margin-top: 20px;
 }
 
 .card h2 {
