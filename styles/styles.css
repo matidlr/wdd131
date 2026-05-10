@@ -95,6 +95,7 @@ main h1 {
     display: block;
 
     flex-shrink: 0;
+    margin-bottom: 15px;
 }
 
 .card1 img {
