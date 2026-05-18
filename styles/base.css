@@ -158,12 +158,12 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #0066cc;
+    color: #339;
     font-weight: bold;
 }
 
 ul li a:hover {
-    color: #004499;
+    color: #701b06;
     text-decoration: underline;
 }
 
