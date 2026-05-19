@@ -1,55 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1,
+h2 {
 	font-family: Roboto, helvetica, sans-serif;
+	margin: 0;
+	padding: 0.5rem;
+	font-size: larger;
+	font-weight: 700;
 }
 
-header,
-main,
-footer {
-	max-width: 760px;
-	margin: 0 auto;
-}
-
-marquee {
-	padding: 1rem;
+section {
+	margin: 1rem 0;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	padding: 0.5rem;
+	width: 760px;
 	background-color: #eee;
 }
 
-h1 {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+p,
+input,
+label {
+	margin: 0.25rem;
+	padding: 0.5rem;
 }
 
-main {
-	display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+.sel::selection {
+	background-color: #000;
+	color: yellow;
 }
 
-h2 {
+.firstline::first-line {
+	color: tomato;
+}
+.firstletter::first-letter {
 	color: navy;
-	text-align: left;
-    grid-column: 1 / 3;
+	font-size: 2rem;
+}
+.before::before {
+	content: "🎈 ";
+}
+.after::after {
+	content: " 🌮";
 }
 
-article p {
-	text-align: justify;
+ol {
+	list-style: numeric;
+	margin-left: 3rem;
 }
 
-.callout {
-	color: #777;
-	background-color: rgb(4, 4, 104);
-    padding: 15px;
-    color: #eee;
+.counter {
+	counter-increment: paras;
+	font-family: courier;
 }
 
-footer {
-	margin-top: 1rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	font-size: smaller;
-	text-align: left;
+.counter::before {
+	content: "🔸" counter(paras) ":";
 }
-.banner {
-    padding: 1rem;
-    background-color: #eee;
-    text-align: center;
-    font-weight: bold;
+
+.mark-complete::before {
+	content: "🗝️ ";
+}
+
+ol li::marker {
+	color: navy;
+	font-size: 2rem;
+	content: "✓ ";
 }
