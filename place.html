@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madagascar</title>
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source
+                    srcset="images/a_madagascar_a.webp"
+                    media="(min-width: 768px)"
+                />
+
+                <img
+                    src="images/emurr.jpg"
+                    alt="Lemur in Madagascar"
+                />
+            </picture>
+        </section>
+
+        <section class="card data">
+            <h2>Data</h2>
+
+            <div class="info">
+                <p><strong>Area:</strong> 587,041 sq km</p>
+                <p><strong>Population:</strong> 27,691,018</p>
+                <p><strong>Capital:</strong> Antananarivo</p>
+                <p><strong>Languages:</strong> Malagasy, French</p>
+                <p><strong>Currency:</strong> Malagasy Ariary</p>
+                <p><strong>Time Zone:</strong> UTC+3</p>
+                <p><strong>Calling Code:</strong> +261</p>
+                <p><strong>Internet TLD:</strong> .mg</p>
+            </div>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img
+                src="images/weather-icon-png.png"
+                alt="Weather Icon"
+                class="weather-icon"
+            />
+
+            <div class="info">
+                <p><strong>Temperature:</strong> <span id="temp">10</span> °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            ©<span id="year"></span>
+            🌸 Matias de la Rosa 🌸
+            Madagascar
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
