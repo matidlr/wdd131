@@ -40,10 +40,10 @@ header h1 {
 
 
 .card {
-    background-color: #eeeeee;
+    background-color: var(--background-color);
     text-align: center;
     padding: 2rem;
-    border-top: 2px solid #dddddd;
+    border-top: 2px solid var(--secondary-color);
 }
 
 .card h2 {
