@@ -80,21 +80,21 @@ const temples = [
         location: "Salt Lake City, Utah, United States",
         dedicated: "1893, April, 6",
         area: 253000,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-36954.jpg"
+        imageUrl: "./images/salt-lake-temple.jpg"
     },
     {
         templeName: "Rome Italy",
         location: "Rome, Italy",
         dedicated: "2019, March, 10",
         area: 41010,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-54109.jpg"
+        imageUrl: "./images/rome-italy-temple.jpg"
     },
     {
         templeName: "Buenos Aires Argentina",
         location: "Buenos Aires, Argentina",
         dedicated: "1986, January, 17",
         area: 30659,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-1189.jpg"
+        imageUrl: "./images/bs-as-temple.jpg"
     }
 ];
 

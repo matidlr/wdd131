@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #234e70;
+    --secondary-color: #fbf8f3;
+    --accent-color: #166088;
+    --text-color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Temple Cards */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.gallery section {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.gallery h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gallery p {
+    margin-bottom: 0.5rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
