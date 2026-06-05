@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boca Juniors Fan Website - Site Plan</title>
+    <style>
+        /* ------------------------------------ */
+        /* TYPOGRAPHY & COLOR SCHEMA DEFINITION */
+        /* ------------------------------------ */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+        :root {
+            --primary-blue: #003893;     /* Boca's Dark Blue */
+            --accent-gold: #F3B229;      /* Boca's Yellow/Gold */
+            --dark-bg: #111111;
+            --light-bg: #f5f5f5;
+            --white: #ffffff;
+            --text-dark: #333333;
+            
+            --heading-font: 'Montserrat', sans-serif;
+            --body-font: 'Open Sans', sans-serif;
+        }
+
+        /* ------------------------------------ */
+        /* DOCUMENT STYLING (Applying Scheme)   */
+        /* ------------------------------------ */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 8px solid var(--accent-gold);
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: var(--white);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        section.accent-section {
+            border-left: 5px solid var(--accent-gold);
+        }
+
+        h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-blue);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-family: var(--heading-font);
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            margin: 15px 0 5px 0;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 25px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Color Palette Display Blocks */
+        .color-palette {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .color-box {
+            flex: 1;
+            min-width: 150px;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* ------------------------------------ */
+        /* WIREFRAMES (Responsive Grid/Flex)    */
+        /* ------------------------------------ */
+        .wireframe-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .wireframe-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .wireframe-box {
+            background-color: #eaeded;
+            border: 2px dashed #95a5a6;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        .wireframe-box h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #7f8c8d;
+        }
+
+        /* Mock layout elements */
+        .mock-nav { background: #bdc3c7; height: 35px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; }
+        .mock-hero { background: #b2babb; height: 120px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        .mock-main-content { background: #cacfd2; min-height: 150px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; }
+        .mock-sidebar { background: #d5dbdb; height: 100px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; }
+        .mock-footer { background: #95a5a6; height: 40px; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; }
+
+        /* Desktop specific layout changes inside the wireframe diagram */
+        .desktop-layout-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+        }
+        .desktop-layout-grid .mock-sidebar { height: auto; margin-bottom: 10px; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777777;
+            border-top: 1px solid #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Boca Juniors Fan Hub</h1>
+        <p>Website Planning & Architecture Document</p>
+    </header>
+
+    <main>
+        <!-- SITE NAME SECTION -->
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Chosen Name:</strong> Boca Juniors Fan Hub</p>
+            <p><strong>Description:</strong> This name directly identifies the website as a dedicated space for fans of Club Atlético Boca Juniors. It indicates that the site serves as a central "hub" where supporters can access comprehensive information regarding the club's history, current squad, matches, and achievements.</p>
+            <p><strong>Target Domain:</strong> bocajuniorsfanhub.net (Alternative: bocafanhub.org)</p>
+        </section>
+
+        <!-- SITE PURPOSE SECTION -->
+        <section class="accent-section">
+            <h2>Site Purpose</h2>
+            <p>The purpose of this website is to provide an interactive, responsive, and informational platform for Boca Juniors supporters worldwide. The scope of the project includes:</p>
+            <ul>
+                <li>Preserving and presenting the rich history and legendary achievements of the club.</li>
+                <li>Displaying the active first-team roster dynamically using modern JavaScript components.</li>
+                <li>Providing information on recent match results and news updates.</li>
+                <li>Engaging users via a custom interactive contact/feedback form and saving individual user preferences (like a "Favorite Player" feature) locally in the browser.</li>
+            </ul>
+        </section>
+
+        <!-- SCENARIOS SECTION -->
+        <section>
+            <h2>Target Audience Scenarios</h2>
+            <p>To guide the layout, user experience, and architecture of the content, the site addresses the following critical user inquiries:</p>
+            
+            <h3>Scenario 1</h3>
+            <p><em>"Who are the current active forward players in the squad, and what are their seasonal statistics?"</em></p>
+            <p><strong>Site Answer:</strong> The dedicated <strong>Players Page</strong> will generate interactive player cards using a JavaScript array of objects. Users will be able to view details dynamically and save their favorite players using <code>localStorage</code>.</p>
+
+            <h3>Scenario 2</h3>
+            <p><em>"Where can I see the list of major international titles won by Boca Juniors, and how can I contact the fan club management?"</em></p>
+            <p><strong>Site Answer:</strong> The historical achievements are highlighted inside structured semantic lists on the <strong>Home Page</strong>, while a standard-compliant HTML form is available on the <strong>Contact Page</strong> for direct user inquiries.</p>
+        </section>
+
+        <!-- COLOR SCHEMA SECTION -->
+        <section class="accent-section">
+            <h2>Color Schema</h2>
+            <p>The color strategy accurately mirrors Boca Juniors' official institutional branding, using high contrast ratios to secure accessibility (WCAG AA compliance) and visual hierarchy.</p>
+            
+            <div class="color-palette">
+                <div class="color-box" style="background-color: #003893;">
+                    Boca Blue<br>#003893<br>(Primary Headers & Branding)
+                </div>
+                <div class="color-box" style="background-color: #F3B229; color: #111111;">
+                    Boca Gold<br>#F3B229<br>(Accents, Borders & Buttons)
+                </div>
+                <div class="color-box" style="background-color: #ffffff; color: #333333; border: 1px solid #ddd;">
+                    Body Base<br>#FFFFFF<br>(Content Background)
+                </div>
+                <div class="color-box" style="background-color: #111111;">
+                    Dark Text<br>#111111<br>(Typography & Structure)
+                </div>
+            </div>
+            <p style="margin-top: 15px;"><strong>Application Rule:</strong> Deep Blue establishes the core structure (Headers, Main navigation base). Gold serves as the secondary accent color to draw focus to active elements, links, and grid borders. Dark Text over a Light/White background guarantees optimal reading clarity.</p>
+        </section>
+
+        <!-- TYPOGRAPHY SECTION -->
+        <section>
+            <h2>Typography</h2>
+            <p>The font selection relies on modern web fonts delivered via Google Fonts to achieve a clean balance between an energetic athletic theme and standard corporate readability:</p>
+            
+            <h3>Heading Typography: 'Montserrat', sans-serif</h3>
+            <p style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.2rem;">BOCA JUNIORS: 1905 LEGENDARY GLORY</p>
+            <p>Used strictly for main titles (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) and navigation components. Bold, geometric, and highly visible.</p>
+
+            <h3>Body Typography: 'Open Sans', sans-serif</h3>
+            <p style="font-family: 'Open Sans', sans-serif;">La Bombonera is one of the most famous football stadiums in the world. This font handles all standard paragraphs, form text, tables, and lists.</p>
+            <p>Used across all primary text blocks, player cards, and references. Optimized for crisp multi-device legibility.</p>
+        </section>
+
+        <!-- WIREFRAMES SECTION -->
+        <section class="accent-section">
+            <h2>Layout Wireframes</h2>
+            <p>The structural wireframes illustrate how the home page layout smoothly adapts across varying viewport sizes using responsive design rules.</p>
+            
+            <div class="wireframe-container">
+                <!-- Mobile Wireframe View -->
+                <div class="wireframe-box">
+                    <h3>Mobile View (Single Column)</h3>
+                    <div class="mock-nav">Header & Hamburger Menu</div>
+                    <div class="mock-hero">Hero Image / Latest News</div>
+                    <div class="mock-main-content">Main Content (History & Features)</div>
+                    <div class="mock-sidebar">Sidebar (Club Stats Widget)</div>
+                    <div class="mock-footer">Footer & References Link</div>
+                </div>
+
+                <!-- Desktop Wireframe View -->
+                <div class="wireframe-box">
+                    <h3>Desktop View (Split Column Grid)</h3>
+                    <div class="mock-nav">Header & Full Horizontal Navigation Bar</div>
+                    <div class="mock-hero" style="height: 60px;">Hero Banner (Wide View)</div>
+                    <div class="desktop-layout-grid">
+                        <div class="mock-main-content">Main Content Area (Flexible Data)</div>
+                        <div class="mock-sidebar">Sidebar Area</div>
+                    </div>
+                    <div class="mock-footer">Footer & References Link</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Matias de la Rosa | WDD131 Final Project Plan Document</p>
+    </footer>
+
+</body>
+</html>
