@@ -58,6 +58,10 @@ textarea {
     padding: .75rem;
 }
 
+.raiting {
+    display: flex;
+}
+
 .rating input {
     width: auto;
 }
