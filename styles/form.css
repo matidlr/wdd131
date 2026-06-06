@@ -37,7 +37,7 @@ main {
 }
 
 form {
-    background: white;
+    background: var(--secondary-color);
     padding: 2rem;
     border-radius: 10px;
 }
