@@ -27,7 +27,8 @@ header {
     color: white;
     text-align: center;
     padding: 1rem;
-}
+    max-width: 700px;
+    }
 
 main {
     max-width: 700px;
