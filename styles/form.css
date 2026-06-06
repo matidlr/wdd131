@@ -46,7 +46,7 @@ main {
 }
 
 form {
-    background-color: var(--form-bg);
+    background-color: var(--secondary-color);
     padding: 2rem;
     border-radius: 5px;
 }
