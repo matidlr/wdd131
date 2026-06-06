@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #003049;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: .75rem;
+}
+
+.rating input {
+    width: auto;
+}
+
+.submit-btn {
+    background: #003049;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    opacity: .9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #003049;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+    form {
+        padding: 1rem;
+    }
+
+}
