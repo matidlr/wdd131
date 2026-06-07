@@ -91,18 +91,18 @@ textarea {
     margin-top: 1rem;
 }
 
-.raiting-input {
+.rating-input {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: .5rem;
 }
 
-.raiting-input label {
+.rating-input label {
     font-size: 1.5rem;
 }
 
-.raiting-input input {
+.rating-input input {
     width: 20px;
     height: 20px;
 }
