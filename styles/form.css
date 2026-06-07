@@ -109,6 +109,11 @@ textarea {
 
 /* FEATURES */
 
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-group input[type="checkbox"] {
     width: auto;
     margin-right: .5rem;
