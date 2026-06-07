@@ -114,12 +114,12 @@ textarea {
     flex-direction: column;
 }
 
-.form-group input[type="checkbox"] {
+.features input[type="checkbox"] {
     width: auto;
     margin-right: .5rem;
 }
 
-.form-group label:has(input[type="checkbox"]) {
+.features label:has(input[type="checkbox"]) {
     display: block;
     font-size: 1.1rem;
     font-weight: normal;
